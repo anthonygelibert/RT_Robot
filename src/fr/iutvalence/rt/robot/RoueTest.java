@@ -14,13 +14,13 @@ public final class RoueTest {
 
     /** Test a wheel of the default size. */
     @Test
-    public final void testRoueInt() {
+    public void testRoueInt() {
         Assert.assertEquals("Roue(10)", new Roue().toString());
     }
 
     /** Test a wheel of the given size. */
     @Test
-    public final void testRoue() {
+    public void testRoue() {
         Assert.assertEquals("Roue(50)", new Roue(50).toString());
     }
 

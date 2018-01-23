@@ -17,14 +17,14 @@ public enum Orientation {
     EST(1, 0);
 
     /** When moving, delta of the current orientation in the X axe of the orthonormal frame. */
-    public final int deltaX;
+    public final int m_deltaX;
     /** When moving, delta of the current orientation in the Y axe of the orthonormal frame. */
-    public final int deltaY;
+    public final int m_deltaY;
 
     /** Create a new orientation with its moving vector. */
     Orientation(int deltaX, int deltaY) {
-        this.deltaX = deltaX;
-        this.deltaY = deltaY;
+        this.m_deltaX = deltaX;
+        this.m_deltaY = deltaY;
     }
 
     /** Which orientation when turn on right. */

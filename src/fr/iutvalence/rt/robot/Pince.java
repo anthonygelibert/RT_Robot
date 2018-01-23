@@ -10,11 +10,11 @@ public final class Pince {
     /** Hand's default state. */
     public static final boolean DEFAULT_STATE = true;
     /** Current state. */
-    private             boolean ouvert;
+    private             boolean m_ouvert;
 
     /** Create a new hand in the given state. */
     public Pince(boolean ouvert) {
-        this.ouvert = ouvert;
+        this.m_ouvert = ouvert;
     }
 
     /** Create a new hand in the default state. */
@@ -24,17 +24,17 @@ public final class Pince {
 
     /** Open the hand. */
     public void ouvrir() {
-        this.ouvert = true;
+        this.m_ouvert = true;
     }
 
     /** Close the hand. */
     public void fermer() {
-        this.ouvert = false;
+        this.m_ouvert = false;
     }
 
     @Override
     public String toString() {
-        return this.ouvert ? "pince ouverte" : "pince fermée";
+        return this.m_ouvert ? "pince ouverte" : "pince fermée";
     }
 
 }

@@ -8,49 +8,50 @@ package fr.iutvalence.rt.robot;
  */
 public class Robot {
     /** Left wheel. */
-    private final Roue        roueGauche;
+    private final Roue        m_roueGauche;
     /** Right wheel. */
-    private final Roue        roueDroite;
+    private final Roue        m_roueDroite;
     /** Robot's position. */
-    private       Position    position;
+    private       Position    m_position;
     /** Robot's orientation. */
-    private       Orientation orientation = Orientation.NORD;
+    private       Orientation m_orientation = Orientation.NORD;
 
     /** Create a new robot at the default position with the default wheel size. */
     public Robot() {
-        this(Position.DEFAULT_X, Position.DEFAULT_Y, Roue.DEFAULT_DIAM);
+        this(Position.DEFAULT_X, Position.DEFAULT_Y, Roue.DEFAULT_SIZE);
     }
 
     /** Create a new robot at the given position. */
     public Robot(int x, int y) {
-        this(x, y, Roue.DEFAULT_DIAM);
+        this(x, y, Roue.DEFAULT_SIZE);
     }
 
     /** Create a new robot at the given position with the given wheel size. */
     public Robot(int x, int y, int diametre) {
-        this.roueGauche = new Roue(diametre);
-        this.roueDroite = new Roue(diametre);
-        this.position = new Position(x, y);
+        this.m_roueGauche = new Roue(diametre);
+        this.m_roueDroite = new Roue(diametre);
+        this.m_position = new Position(x, y);
     }
 
     /** Turn on the right. */
     public void tournerDroite() {
-        this.orientation = this.orientation.tournerDroite();
+        this.m_orientation = this.m_orientation.tournerDroite();
     }
 
     /** Get the current robot position. */
     public Position getPosition() {
-        return this.position;
+        return this.m_position;
     }
 
     /** Move forward. */
     public void avancer() {
-        this.position = this.position.deplacer(this.orientation.deltaX * this.roueGauche.diametre,
-                                               this.orientation.deltaY * this.roueGauche.diametre);
+        this.m_position = this.m_position.deplacer(this.m_orientation.m_deltaX * this.m_roueGauche.m_diametre,
+                                                   this.m_orientation.m_deltaY * this.m_roueGauche.m_diametre);
     }
 
     @Override
     public String toString() {
-        return String.format("Robot[%s,%s]@%s°%s", this.roueGauche, this.roueDroite, this.position, this.orientation);
+        return String.format("Robot[%s,%s]@%s°%s", this.m_roueGauche, this.m_roueDroite, this.m_position,
+                             this.m_orientation);
     }
 }

@@ -8,23 +8,23 @@ package fr.iutvalence.rt.robot;
  */
 public final class Roue {
     /** Default size of the wheel. */
-    public static final int DEFAULT_DIAM = 10;
+    public static final int DEFAULT_SIZE = 10;
     /** Size of the wheel. */
-    public final        int diametre;
+    public final        int m_diametre;
 
     /** Create a wheel of the given size. */
     public Roue(int diametre) {
-        this.diametre = diametre;
+        this.m_diametre = diametre;
     }
 
     /** Create a wheel of the default size. */
     public Roue() {
-        this(DEFAULT_DIAM);
+        this(DEFAULT_SIZE);
     }
 
     @Override
     public String toString() {
-        return "Roue(" + diametre + ")";
+        return "Roue(" + m_diametre + ")";
     }
 
 }

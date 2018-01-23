@@ -13,13 +13,13 @@ import org.junit.Test;
 public final class PositionTest {
     /** Test a position at the default coordinate. */
     @Test
-    public void TestDefaultPosition() {
+    public void testDefaultPosition() {
         Assert.assertEquals("(0,0)", new Position().toString());
     }
 
     /** Test a position at a given coordinate. */
     @Test
-    public void TestCustomPosition() {
+    public void testCustomPosition() {
         Assert.assertEquals("(5,5)", new Position(5, 5).toString());
     }
 }

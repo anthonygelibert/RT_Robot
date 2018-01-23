@@ -13,14 +13,14 @@ public final class Position {
     public static final int DEFAULT_Y = 0;
 
     /** X coordinate. */
-    private final int x;
+    private final int m_x;
     /** Y coordinate. */
-    private final int y;
+    private final int m_y;
 
     /** Create a new position at the given coordinate. */
     public Position(int x, int y) {
-        this.x = x;
-        this.y = y;
+        this.m_x = x;
+        this.m_y = y;
     }
 
     /** Create a new position at the default coordinate. */
@@ -30,12 +30,12 @@ public final class Position {
 
     /** Shift the current position from the given delta and generate the corresponding position. */
     public Position deplacer(int deltaX, int deltaY) {
-        return new Position(x + deltaX, y + deltaY);
+        return new Position(m_x + deltaX, m_y + deltaY);
     }
 
     @Override
     public String toString() {
-        return "(" + x + "," + y + ")";
+        return "(" + m_x + "," + m_y + ")";
     }
 
 }

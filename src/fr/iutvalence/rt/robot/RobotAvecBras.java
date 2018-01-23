@@ -8,7 +8,7 @@ package fr.iutvalence.rt.robot;
  */
 public final class RobotAvecBras extends Robot {
     /** Robot's arm. */
-    private final Bras bras = new Bras();
+    private final Bras m_bras = new Bras();
 
     /** Create a new robot at the default position with the default wheel size. */
     public  RobotAvecBras() {
@@ -27,21 +27,21 @@ public final class RobotAvecBras extends Robot {
 
     /** Raise the arm. */
     public void leverBras() {
-        this.bras.lever();
+        this.m_bras.lever();
     }
 
     /** Lower the arm. */
     public void baisserBras() {
-        this.bras.baisser();
+        this.m_bras.baisser();
     }
 
     /** Open the hand. */
     public void ouvrirPince() {
-        this.bras.ouvrirPince();
+        this.m_bras.ouvrirPince();
     }
 
     /** Close the hand. */
     public void fermerPince() {
-        this.bras.fermerPince();
+        this.m_bras.fermerPince();
     }
 }
