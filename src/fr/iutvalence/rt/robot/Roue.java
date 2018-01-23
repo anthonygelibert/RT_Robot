@@ -2,22 +2,22 @@ package fr.iutvalence.rt.robot;
 
 public class Roue {
 
-	public static final int DEFAULT_DIAM = 10;
-	
-	public final int diametre;
+    public static final int DEFAULT_DIAM = 10;
 
-	public Roue(int diametre) {
-		this.diametre = diametre;
-	}
+    public final int diametre;
 
-	public Roue() {
-		this(DEFAULT_DIAM);
-	}
+    public Roue(int diametre) {
+        this.diametre = diametre;
+    }
 
-	@Override
-	public String toString() {
-		return "Roue(" + diametre + ")";
-	}
+    public Roue() {
+        this(DEFAULT_DIAM);
+    }
+
+    @Override
+    public String toString() {
+        return "Roue(" + diametre + ")";
+    }
 
 }
 
