@@ -11,16 +11,17 @@ public final class RobotAvecBras extends Robot {
     private final Bras bras = new Bras();
 
     /** Create a new robot at the default position with the default wheel size. */
-    private RobotAvecBras() {
+    public  RobotAvecBras() {
+        super();
     }
 
     /** Create a new robot at the given position. */
-    private RobotAvecBras(final int x, final int y) {
+    public RobotAvecBras(final int x, final int y) {
         super(x, y);
     }
 
     /** Create a new robot at the given position with the given wheel size. */
-    private RobotAvecBras(final int x, final int y, final int diametre) {
+    public RobotAvecBras(final int x, final int y, final int diametre) {
         super(x, y, diametre);
     }
 
