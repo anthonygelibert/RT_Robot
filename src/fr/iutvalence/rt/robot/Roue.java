@@ -24,7 +24,7 @@ public final class Roue {
 
     @Override
     public String toString() {
-        return "Roue(" + m_diametre + ")";
+        return String.format("Roue(%d)", m_diametre);
     }
 
 }

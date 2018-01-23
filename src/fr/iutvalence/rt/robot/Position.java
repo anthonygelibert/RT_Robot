@@ -35,7 +35,7 @@ public final class Position {
 
     @Override
     public String toString() {
-        return "(" + m_x + "," + m_y + ")";
+        return String.format("(%d,%d)", m_x, m_y);
     }
 
 }

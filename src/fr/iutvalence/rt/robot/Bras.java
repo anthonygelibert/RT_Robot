@@ -47,6 +47,6 @@ public final class Bras {
 
     @Override
     public String toString() {
-        return (this.m_leve ? "bras levé" : "bras baissé") + " et " + this.m_pince;
+        return String.format("%s et %s", this.m_leve ? "bras levé" : "bras baissé", this.m_pince);
     }
 }
