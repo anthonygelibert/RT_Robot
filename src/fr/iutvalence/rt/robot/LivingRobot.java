@@ -12,20 +12,20 @@ public final class LivingRobot {
      *
      * @param args unused
      */
-    public static void main(String[] args) {
-        final Robot r = new Robot(0, 0, 50);
-        System.out.println(r);
-        r.avancer();
-        r.avancer();
-        r.tournerDroite();
-        r.avancer();
-        r.avancer();
-        System.out.println(r);
+    public static void main(final String... args) {
+        final Robot robot = new Robot(0, 0, 50);
+        System.out.println(robot);
+        robot.avancer();
+        robot.avancer();
+        robot.tournerDroite();
+        robot.avancer();
+        robot.avancer();
+        System.out.println(robot);
 
-        final Bras b = new Bras();
-        System.out.println(b);
-        b.fermerPince();
-        System.out.println(b);
+        final Bras arm = new Bras();
+        System.out.println(arm);
+        arm.fermerPince();
+        System.out.println(arm);
 
     }
 
