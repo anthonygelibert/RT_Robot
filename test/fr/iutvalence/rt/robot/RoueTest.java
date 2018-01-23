@@ -4,6 +4,8 @@ package fr.iutvalence.rt.robot;
 import org.junit.Assert;
 import org.junit.Test;
 
+import static org.hamcrest.CoreMatchers.is;
+
 /**
  * Test class for Roue.
  *
@@ -15,13 +17,13 @@ public final class RoueTest {
     /** Test a wheel of the default size. */
     @Test
     public void testRoueInt() {
-        Assert.assertEquals("Invalid default wheel", "Roue(10)", new Roue().toString());
+        Assert.assertThat("Invalid default wheel", new Roue().toString(), is("Roue(10)"));
     }
 
     /** Test a wheel of the given size. */
     @Test
     public void testRoue() {
-        Assert.assertEquals("Invalid custom wheel", "Roue(50)", new Roue(50).toString());
+        Assert.assertThat("Invalid custom wheel", new Roue(50).toString(), is("Roue(50)"));
     }
 
 }
