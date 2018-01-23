@@ -20,7 +20,7 @@ public final class Bras {
     }
 
     /** Create an arm in the given state. */
-    public Bras(boolean leve) {
+    public Bras(final boolean leve) {
         this.m_leve = leve;
         this.m_pince = new Pince();
     }

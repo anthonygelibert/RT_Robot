@@ -22,29 +22,29 @@ public class Robot {
     }
 
     /** Create a new robot at the given position. */
-    public Robot(int x, int y) {
+    public Robot(final int x, final int y) {
         this(x, y, Roue.DEFAULT_SIZE);
     }
 
     /** Create a new robot at the given position with the given wheel size. */
-    public Robot(int x, int y, int diametre) {
+    public Robot(final int x, final int y, final int diametre) {
         this.m_roueGauche = new Roue(diametre);
         this.m_roueDroite = new Roue(diametre);
         this.m_position = new Position(x, y);
     }
 
     /** Turn on the right. */
-    public void tournerDroite() {
+    public final void tournerDroite() {
         this.m_orientation = this.m_orientation.tournerDroite();
     }
 
     /** Get the current robot position. */
-    public Position getPosition() {
+    public final Position getPosition() {
         return this.m_position;
     }
 
     /** Move forward. */
-    public void avancer() {
+    public final void avancer() {
         this.m_position = this.m_position.deplacer(this.m_orientation.m_deltaX * this.m_roueGauche.m_diametre,
                                                    this.m_orientation.m_deltaY * this.m_roueGauche.m_diametre);
     }

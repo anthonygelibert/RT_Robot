@@ -18,7 +18,7 @@ public final class Position {
     private final int m_y;
 
     /** Create a new position at the given coordinate. */
-    public Position(int x, int y) {
+    public Position(final int x, final int y) {
         this.m_x = x;
         this.m_y = y;
     }
@@ -29,7 +29,7 @@ public final class Position {
     }
 
     /** Shift the current position from the given delta and generate the corresponding position. */
-    public Position deplacer(int deltaX, int deltaY) {
+    public Position deplacer(final int deltaX, final int deltaY) {
         return new Position(m_x + deltaX, m_y + deltaY);
     }
 

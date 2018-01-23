@@ -22,7 +22,7 @@ public enum Orientation {
     public final int m_deltaY;
 
     /** Create a new orientation with its moving vector. */
-    Orientation(int deltaX, int deltaY) {
+    Orientation(final int deltaX, final int deltaY) {
         this.m_deltaX = deltaX;
         this.m_deltaY = deltaY;
     }

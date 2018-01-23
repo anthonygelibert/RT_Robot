@@ -13,7 +13,7 @@ public final class Roue {
     public final        int m_diametre;
 
     /** Create a wheel of the given size. */
-    public Roue(int diametre) {
+    public Roue(final int diametre) {
         this.m_diametre = diametre;
     }
 

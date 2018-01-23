@@ -13,7 +13,7 @@ public final class Pince {
     private             boolean m_ouvert;
 
     /** Create a new hand in the given state. */
-    public Pince(boolean ouvert) {
+    public Pince(final boolean ouvert) {
         this.m_ouvert = ouvert;
     }
 
