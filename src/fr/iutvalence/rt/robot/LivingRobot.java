@@ -6,7 +6,7 @@ package fr.iutvalence.rt.robot;
  * @author Anthony GELIBERT
  * @version 1.0.0
  */
-public class LivingRobot {
+public final class LivingRobot {
     /**
      * Main method.
      *

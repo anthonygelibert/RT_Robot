@@ -6,7 +6,7 @@ package fr.iutvalence.rt.robot;
  * @author Anthony GELIBERT
  * @version 1.0.0
  */
-public class Pince {
+public final class Pince {
     /** Hand's default state. */
     public static final boolean DEFAULT_STATE = true;
     /** Current state. */

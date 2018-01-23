@@ -6,7 +6,7 @@ package fr.iutvalence.rt.robot;
  * @author Anthony GELIBERT
  * @version 1.0.0
  */
-public class Position {
+public final class Position {
     /** Default X coordinate. */
     public static final int DEFAULT_X = 0;
     /** Default Y coordinate. */

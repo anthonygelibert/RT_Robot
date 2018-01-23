@@ -6,7 +6,7 @@ package fr.iutvalence.rt.robot;
  * @author Anthony GELIBERT
  * @version 1.0.0
  */
-public class Bras {
+public final class Bras {
     /** Default arm state. */
     public static final boolean DEFAULT_STATE = false;
     /** Hand at the end of the arm. */

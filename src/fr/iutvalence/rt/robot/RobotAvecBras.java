@@ -6,7 +6,7 @@ package fr.iutvalence.rt.robot;
  * @author Anthony GELIBERT
  * @version 1.0.0
  */
-public class RobotAvecBras extends Robot {
+public final class RobotAvecBras extends Robot {
     /** Robot's arm. */
     private final Bras bras = new Bras();
 

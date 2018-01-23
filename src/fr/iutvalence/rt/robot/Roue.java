@@ -6,7 +6,7 @@ package fr.iutvalence.rt.robot;
  * @author Anthony GELIBERT
  * @version 1.0.0
  */
-public class Roue {
+public final class Roue {
     /** Default size of the wheel. */
     public static final int DEFAULT_DIAM = 10;
     /** Size of the wheel. */

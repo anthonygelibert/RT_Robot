@@ -10,7 +10,7 @@ import org.junit.Test;
  * @version 1.0.0
  * @see Position
  */
-public class PositionTest {
+public final class PositionTest {
     /** Test a position at the default coordinate. */
     @Test
     public void TestDefaultPosition() {

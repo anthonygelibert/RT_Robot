@@ -10,7 +10,7 @@ import org.junit.Test;
  * @author Anthony GELIBERT
  * @version 1.0.0
  */
-public class RoueTest {
+public final class RoueTest {
 
     /** Test a wheel of the default size. */
     @Test
